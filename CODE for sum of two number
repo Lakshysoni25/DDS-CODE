@@ -6,7 +6,8 @@ int main()
     a=10;
     b=15;
     c=a+b;
-    printf("The sum of two number is :");
-    printf("%d");
+
+    printf("The sum of two number is :%d,c");
+   
     return 0;
 }
