@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,i;
+    cout<<"Enter the size of array : ";
+    cin>>n;
+    int *arr=new int[n];
+    
+    for(i=0;i<n;i++)
+    {
+       cout<<"Enter the value at arr["<<i<<"]index : ";
+       cin>>arr[i];
+    }
+     cout<<"the element of array is :"<<endl;
+     
+    for(i=0;i<n;i++)
+    {
+      cout<<arr[i]<<endl; 
+    }
+    
+    int newsize;
+     
+     cout<< "Enter the new sizeof array : ";
+     cin>>newsize;
+     
+     int *arr1=new int[newsize];
+     
+     for(i=0;i<newsize;i++)
+     {
+         cout<<"Enter the value at arr["<<i<<"]index : ";
+         cin>>arr1[i];
+     }
+      cout<<"the element of array is : "<<endl;
+      
+      for(i=0;i<newsize;i++)
+      {
+          cout<<arr1[i]<<endl;
+      }
+    return 0;
+}
