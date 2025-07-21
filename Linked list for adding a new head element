@@ -40,12 +40,24 @@ void insertEnd(int num)
         cout<<num<<"inserted"<<endl;
     }
 }
+
+void Traverse()
+{
+    Node*temp = head;
+    while(temp!=NULL)
+    {
+        cout<<temp->data<<"-->";
+        temp = temp->next;
+    }
+    cout<<"NULL";
+}
 int main()
 {
     insertEnd(30);
     insertEnd(40);
     insertEnd(50);
     insertEnd(60);
-    insertStart(10);
     insertStart(20);
+    insertStart(10);
+    Traverse();
 }
